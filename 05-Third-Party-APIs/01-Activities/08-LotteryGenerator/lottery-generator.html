@@ -37,6 +37,22 @@
 
       //jquery code here
 
+      $("#random-button").on("click", function() {
+         
+        var lottoArray = [];
+        for (i=0; i < 9; i++) {
+          var digit = Math.floor(Math.random() * 10);
+          lottoArray.push(digit);
+        }
+
+        var lottoString = lottoArray.join('');
+
+
+          
+
+          $("#random-number").text(lottoString);
+      })
+
     });
   </script>
 

@@ -17,7 +17,7 @@
 
   <div class="jumbotron">
     <h1 class="text-center">Number Guesser</h1>
-    <h2 class="text-center">See if you can guess the number the computer is thinking of!</h2>
+    <h2 class="text-center">See if you can guess the number the computer is thinker of!</h2>
   </div>
 
   <div class="container">
@@ -63,16 +63,11 @@
           $(document).ready(function() {
 
             // Here we create the on click event that gets the user's pick
-            var userPick;
-            
             $(".btn-choice").on("click", function() {
-              userPick = $("btn-choice").("h1").text();  
+
               console.log("You clicked a button!!");
-              console.log(userPick);
 
               // Add code to have the computer guess a random number between 1 and 4
-              var computerPick = Math.floor(Math.random() * 4) + 1;
-
               // Then determine which button was clicked
               // Compare the computer and user guess
               // Inform the user if the've guessed correctly or incorrectly
