@@ -82,5 +82,6 @@ todoList.addEventListener("click", function(event) {
   }
 });
 
+
 // Calls init to retrieve data and render it to the page on load
 init()

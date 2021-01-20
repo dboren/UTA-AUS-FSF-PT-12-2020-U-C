@@ -22,6 +22,8 @@ function setTime() {
   }, 1000);
 }
 
+console.log(secondsLeft);
+
 // Function to create and append colorsplosion image
 function sendMessage() {
   timeEl.textContent = " ";
