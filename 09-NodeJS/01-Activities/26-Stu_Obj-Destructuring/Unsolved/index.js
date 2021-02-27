@@ -1,40 +1,42 @@
 // 1. Object
 const nodejs = {
-  name: 'Node.js',
-  type: 'JavaScript runtime environment',
+  nom: 'Node.js',
+  kind: 'JavaScript runtime environment',
 };
 
 // TODO: Destructure the object 'nodejs'
 
-console.log(name); // <= Node.js
-console.log(type); // <= JavaScript runtime environment
+const { nom, kind } = nodejs;
 
-// 2. Nested Object
-const js = {
-  name: 'JavaScript',
-  type: 'programming language',
-  version: 'ES6',
-  tools: {
-    frameworks: {
-      framework1: 'AngularJS',
-      framework2: 'Vue.js',
-    },
-    libraries: {
-      library1: 'jQuery',
-      library2: 'React',
-    },
-  },
-};
+console.log(nom); // <= Node.js
+console.log(kind); // <= JavaScript runtime environment
 
-// TODO: Destructure the nested object 'js'
+// // 2. Nested Object
+// const js = {
+//   name: 'JavaScript',
+//   type: 'programming language',
+//   version: 'ES6',
+//   tools: {
+//     frameworks: {
+//       framework1: 'AngularJS',
+//       framework2: 'Vue.js',
+//     },
+//     libraries: {
+//       library1: 'jQuery',
+//       library2: 'React',
+//     },
+//   },
+// };
 
-console.log(framework1); // <= AngularJS
-console.log(framework2); // <= Vue.js
+// // TODO: Destructure the nested object 'js'
 
-// 3. Arrays
-const languages = ['HTML', 'CSS', 'JavaScript'];
+// console.log(framework1); // <= AngularJS
+// console.log(framework2); // <= Vue.js
 
-// TODO: Destructure the array 'languages'
+// // 3. Arrays
+// const languages = ['HTML', 'CSS', 'JavaScript'];
 
-console.log(markup, style, scripting); // <= HTML CSS JavaScript
-console.log(markup); // <= HTML
+// // TODO: Destructure the array 'languages'
+
+// console.log(markup, style, scripting); // <= HTML CSS JavaScript
+// console.log(markup); // <= HTML
