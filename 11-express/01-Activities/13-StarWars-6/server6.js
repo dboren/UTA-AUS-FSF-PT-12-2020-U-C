@@ -42,6 +42,7 @@ const characters = [
 
 // res.send("Welcome to the Star Wars Page!")
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'view.html')));
+console.log(__dirname);
 
 // Displays all characters
 app.get('/api/characters', (req, res) => res.json(characters));
